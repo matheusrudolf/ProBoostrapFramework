@@ -8,6 +8,7 @@ namespace ProBoostrapFramework.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index() => View();
+        public IActionResult Index() => View();
+        public IActionResult Formulario() => View();
     }
 }
