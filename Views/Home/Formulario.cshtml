@@ -5,13 +5,69 @@
 </head>
 <body>
 
-    <form action="/" method="post">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 offset-3">
+                <form action="/" method="post">
+                    <div class="form-group">
+                        <label for="Nome">Nome</label>
+                        <input type="text" id="Nome" class="form-control" placeholder="Nome" />
+                    </div>
 
-        <input type="text" />
+                    <div class="form-group">
+                        <label for="Email">E-mail</label>
+                        <input type="email" id="Email" class="form-control" placeholder="exemplo@email.com" />
+                    </div>
 
-        <input class="btn btn-primary" type="submit" value="SALVAR" />
-    </form>
+                    <div class="form-group">
+                        <label for="Senha">Senha</label>
+                        <input type="password" id="Senha" class="form-control" placeholder="Senha" />
+                    </div>
 
+                    <div class="form-group">
+                        <label for="Data">Data</label>
+                        <input type="date" id="Data" class="form-control" placeholder="Data" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Range">Range</label>
+                        <input type="range" min="0" max="360" id="Range" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="UF">Estado</label>
+                        <select class="form-control" id="UF">
+                            <option>MT</option>
+                            <option>MS</option>
+                            <option>SP</option>
+                            <option>RJ</option>
+                            <option>TO</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Foto">Foto</label>
+                        <input type="file" id="Foto" class="form-control-file" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Endereco">Endereço</label>
+                        <input type="text" id="Endereco" class="form-control" name="Endereco" placeholder="Endereço" readonly />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Numero">Número</label>
+                        <input type="number" min="10" max="99" id="Numero" class="form-control" name="Numero" placeholder="Número"/>
+                    </div>
+
+                    <section class="row justify-content-center mb-5">
+                        <input class="btn btn-lg btn-primary" type="submit" value="Cadastrar" />
+                    </section>
+
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="~/lib/jquery/jquery.min.js"></script>
     <script src="~/lib/twitter-bootstrap/js/bootstrap.min.js"></script>
 </body>
