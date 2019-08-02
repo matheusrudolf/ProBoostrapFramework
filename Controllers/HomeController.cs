@@ -12,5 +12,6 @@ namespace ProBoostrapFramework.Controllers
         public IActionResult Formulario() => View();
         public IActionResult CheckRadio() => View();
         public IActionResult Tabela() => View();
+        public IActionResult Cards() => View();
     }
 }
